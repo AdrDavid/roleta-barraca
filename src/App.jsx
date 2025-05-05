@@ -28,7 +28,7 @@ function App() {
                             } /> */}
 
                         <Route
-                            path="/roleta"
+                            path="/"
                             element={
                                 <Home />
                             }/>
@@ -41,7 +41,7 @@ function App() {
                                 </PrivateRoute>
                             }
                         /> */}
-                        <Route path="/" element={<Navigate to="/roleta" />} />
+                        <Route path="/" element={<Navigate to="/" />} />
                     </Routes>
             </Router>
 
