@@ -41,7 +41,7 @@ function App() {
                                 </PrivateRoute>
                             }
                         /> */}
-                        <Route path="/" element={<Navigate to="/" />} />
+                        <Route path="/" element={<Navigate to="/roleta" />} />
                     </Routes>
             </Router>
 
