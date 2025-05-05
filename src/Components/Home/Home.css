@@ -1,0 +1,15 @@
+
+.containerAll {
+    overflow: hidden;
+    margin: 0 auto;
+    /* padding-left: 50px; */
+    max-width: 1024px;
+    padding: 10px;
+    justify-content: center;
+    /* background-color: rgb(110, 110, 110); */
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 10px;
+    align-items: center;
+}

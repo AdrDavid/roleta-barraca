@@ -1,0 +1,134 @@
+/* Container principal */
+.containerRoleta {
+    position: relative;
+    width: 600px;  /* Aumentei o tamanho */
+    height: 600px; /* Aumentei o tamanho */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo da roleta */
+.roleta {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    border: 8px solid #ffffff; /* Borda mais grossa */
+    background: conic-gradient(
+        #FF5733 0 12.5%,
+        #41db49 12.5% 25%,
+        #D72638 25% 37.5%,
+        #308142 37.5% 50%,
+        #1E90FF 50% 62.5%,
+        #FFD100 62.5% 75%,
+        #1ABC9C 75% 87.5%,
+        #FF1493 87.5% 100%
+    );
+    transition: transform 5s ease-out;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para efeito */
+}
+
+/* Estilo dos prêmios */
+.premio {
+    font-size: 24px; /* Tamanho maior */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+    transform-origin: center;
+    width: 80px; /* Largura fixa */
+    text-align: center;
+}
+
+/* Botão central */
+.botao-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #4365ff, #3a5bd9);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.botao-central:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Indicador */
+.indicador {
+    width: 80px; /* Aumentei o tamanho */
+    height: 80px; /* Aumentei o tamanho */
+    object-fit: contain;
+    position: absolute;
+    top: -40px; /* Ajuste de posição */
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    z-index: 10;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra */
+}
+
+/* Modal (mantido igual) */
+.modal {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.resultado {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    background-color: white;
+    width: 550px;
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow:3px 3px 15px rgba(0, 0, 0, 0.377);
+    border: 4px solid #31A358;
+    padding: 40px 70px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .containerRoleta {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .premio {
+        font-size: 16px;
+        width: 60px;
+    }
+    
+    .botao-central {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    }
+    
+    .indicador {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+    }
+}
