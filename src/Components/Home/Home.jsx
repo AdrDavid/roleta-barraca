@@ -6,11 +6,25 @@ export default function Home() {
     const [rotation, setRotation] = useState(0);
     const [descontoResposta, setDescontoResposta] = useState();
     return (
+        <>
         <div className='containerAll'>
-
-            {/* <Formulario iniciar={iniciar} setIniciar={setIniciar} rotation={rotation} setRotation={setRotation} descontoResposta={descontoResposta} setDescontoResposta={setDescontoResposta} /> */}
             <Roleta3 iniciar={iniciar} setIniciar={setIniciar} rotation={rotation} setRotation={setRotation} descontoResposta={descontoResposta} />
 
         </div>
+         {/* <div className='patrocinio'>
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+            </div> */}
+        </>
+
+        
     )
 }
