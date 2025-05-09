@@ -104,12 +104,12 @@ export default function Roleta3({ iniciar, setIniciar, rotation, setRotation }) 
             </div>
 
             {/* Modal de resultado (implemente se quiser mostrar o prêmio sorteado) */}
-            {modal && res && (
+            {/* {modal && res && (
                 <div className="modal-resultado">
                     <p>Você ganhou: <strong>{res.nome}</strong>!</p>
                     <button onClick={() => setModal(false)}>Fechar</button>
                 </div>
-            )}
+            )} */}
         </>
     );
 }
